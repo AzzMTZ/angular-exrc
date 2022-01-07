@@ -1,5 +1,22 @@
-<h2>Products</h2>
-
+<h2>Products:</h2>
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <th>{{ product.id }}</th>
+      <td>{{ product.name }}</td>
+      <td>{{ product.description }}</td>
+      <td>{{ product.price }}</td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
